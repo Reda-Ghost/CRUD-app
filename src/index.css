@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(27, 159, 163);
+  color: white;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  padding: 30px 25px;
+  margin-top: 40px;
+}
+
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: .2px;
+  font-size: 28px;
+  background-color: rgb(27, 159, 163);
+  padding: 15px 15px;
+  margin-top: 0;
+}
+.list-courses {
+  margin-block: 10px;
+}
+.list-courses li span {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main-course-form {
+  margin-top: 50px;
+}
+.course-form {
+  margin-top: 10px;
+}
+.main-input-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+.input-container {
+  display: flex;
+}
+.main-course-form input,
+.course-form input{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  flex: 1;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background-color: #eee;
+}
+.main-course-form button.add,
+.main-course-form button.delete,
+.course-form button.update,
+.list-courses li button {
+  display: block;
+  cursor: pointer;
+  background-color: #625df5;
+  color: white;
+  flex: 0 0 100px;
+  padding: 11px 15px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+.course-form button.delete,
+.list-courses li button.delete {
+  background-color: #c95a41;
+}
+
+.course-form button.update {
+  background-color: #47525d;
+}
+
+.list-courses {
+  list-style: none;
+  padding-left: 0;
+}
+.list-courses li {
+  display: flex;
+  margin: 0;
+}
+.list-courses li span {
+  flex: 1;
+  background-color: #ddd;
+  padding: 10px 15px;
+  color: black;
+}
+.list-courses li button.edit {
+  background-color: #4eb981;
 }
