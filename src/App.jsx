@@ -47,6 +47,14 @@ class App extends Component {
 		});
 	};
 
+	showMessageNoCourse = () => {
+			return (
+				<div className="no-courses">
+					There is no courses to show, Please add one's
+				</div>
+			);
+	};
+
 	render() {
 		const { courses } = this.state;
 		const AllCourses = courses.map((course, index) => {
@@ -69,6 +77,7 @@ class App extends Component {
 					addCourse={this.addCourse}
 					current={this.state.current}
 				/>
+				{this.state.courses.length === 0 ? this.showMessageNoCourse() : ''}
 				{AllCourses}
 			</div>
 		);
